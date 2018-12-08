@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include <QPushButton>
+#include <QLabel>
+#include <QLCDNumber>
+#include <QFrame>
 
 namespace Ui {
 class MainWindow;
@@ -28,6 +31,12 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_lcdNumber_overflow();
+
+    void on_lcdNumber_2_overflow();
+
+    void on_lcdNumber_3_overflow();
+
 private:
     Ui::MainWindow *ui;
     QPushButton *option1;
@@ -35,12 +44,18 @@ private:
       QPushButton *option3;
        QPushButton *option4;
 
+    QLCDNumber *numberA;
+    QLCDNumber *numberB;
+    QLCDNumber *corCounter;
+    QLabel *answerLabel;
+
     int opt_1;
     int opt_2;
     int opt_3;
     int opt_4;
     int addA, addB;
     int answer;
+    int correctCount;
     int listAnsw[4];
     int *answerPointer;
     int *arrayPointer;
