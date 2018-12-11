@@ -23,8 +23,20 @@
       <height>32</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
     <property name="text">
      <string>Addition</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -36,8 +48,23 @@
       <height>32</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
     <property name="text">
      <string>Division</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3">
@@ -49,8 +76,20 @@
       <height>32</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
     <property name="text">
      <string>Subtraction</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4">
@@ -62,8 +101,20 @@
       <height>32</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
     <property name="text">
      <string>Multiplication</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser">
