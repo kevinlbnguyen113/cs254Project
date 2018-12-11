@@ -10,6 +10,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    QPixmap bkgnd("/Users/Tram-AnhTran/project2/Math-is-Fun.jpg");
+    bkgnd = bkgnd.scaled(640, 480, Qt::IgnoreAspectRatio);
+    QPalette palette;
+    palette.setBrush(QPalette::Background, bkgnd);
+    this->setPalette(palette);
 }
 
 MainWindow::~MainWindow()
