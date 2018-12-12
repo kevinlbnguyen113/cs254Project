@@ -19,7 +19,7 @@ public:
     explicit Subtraction(QWidget *parent = nullptr);
     ~Subtraction();
     void randomize();
-    void subEZ();
+    void subEZ(); // function to find the difference and display the answer with the variables
 private slots:
     void on_pushButton_clicked();
 
@@ -50,7 +50,7 @@ private:
         int opt_2;
         int opt_3;
         int opt_4;
-        int addA, addB;
+        int subA, subB;
         int answer;
         int correctCount;
         int listAnsw[4];
