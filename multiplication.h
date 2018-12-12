@@ -18,8 +18,8 @@ class Multiplication : public QDialog
 public:
     explicit Multiplication(QWidget *parent = nullptr);
     ~Multiplication();
-    void randomize();
-    void multiEZ();
+    void randomize(); 
+    void multiEZ(); // calculates the product of the problem and RNG the variables for the problem.
 private slots:
     void on_pushButton_clicked();
 
@@ -50,7 +50,7 @@ private:
         int opt_2;
         int opt_3;
         int opt_4;
-        int addA, addB;
+        int mulA, mulB;
         int answer;
         int correctCount;
         int listAnsw[4];
