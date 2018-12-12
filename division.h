@@ -50,7 +50,7 @@ private:
     int opt_2;
     int opt_3;
     int opt_4;
-    int addA, addB;
+    int divA, divB;
     int answer;
     int correctCount;
     int listAnsw[4];
