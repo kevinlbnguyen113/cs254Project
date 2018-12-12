@@ -76,23 +76,13 @@ void Subtraction::subEZ(){
     int value1 = distribution(*QRandomGenerator::global());
     int value2 = distribution(*QRandomGenerator::global());
 
-    addA = value1 + value2;//make sure value 1 always bigger than value 2
-    addB = value2;
+    subA = value1 + value2;//make sure value 1 always bigger than value 2
+    subB = value2;
 
     on_lcdNumber_overflow();
     on_lcdNumber_2_overflow();
 
-
-    answer = addA - value2;
-
-    std::string v1 = std::to_string(value1);
-    std::string v2 = std::to_string(value2);
-
-    QString vv1(v1.c_str());
-    QString vv2(v2.c_str());
-    QString answerCat;
-
-    answerCat = vv1 + " - " + vv2 + " = ";
+    answer = subA - value2;
 
     for (int i=0; i< 4;i++){
         if (listAnsw[i] == -1){
@@ -236,7 +226,7 @@ void Subtraction::on_pushButton_4_clicked()
 
 void Subtraction::on_lcdNumber_overflow()
 {
-    std::string fVar = std::to_string(addA);
+    std::string fVar = std::to_string(subA);
     QString fVar1(fVar.c_str());
 
     numberA->display(fVar1);
@@ -244,7 +234,7 @@ void Subtraction::on_lcdNumber_overflow()
 
 void Subtraction::on_lcdNumber_2_overflow()
 {
-    std::string sVar = std::to_string(addB);
+    std::string sVar = std::to_string(subB);
     QString sVar1(sVar.c_str());
 
     numberB->display(sVar1);
