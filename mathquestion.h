@@ -1,4 +1,7 @@
-
+/*
+    This file holds the logic of a lot of basic functions. None of it is actually part of the QtCreator files just a place
+    all the logic can be referenced for problem logic.
+*/
 #include <iostream>
 #include <string>
 #include <ctime>
